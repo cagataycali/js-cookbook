@@ -23,7 +23,6 @@ loop(100, function (output) {
 /* Callbacks */
 
 /* Promises */
-
 function looper(k) {
   return new Promise(function(resolve, reject) {
     request('https://google.com', function(error, response, body) {
@@ -39,4 +38,4 @@ function looper(k) {
 looper(100)
   .then((value) => {console.log(value);})
   .catch((err) => {console.log(err);})
-  /* Promises */
+/* Promises */
